@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  ai-policy-assistant:
+    build: .
+    container_name: ai-policy-assistant
+    ports:
+      - "7860:7860"
+    env_file:
+      - .env

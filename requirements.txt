@@ -1,0 +1,9 @@
+gradio==4.38.1
+openai==1.40.6
+pydantic==2.8.2
+markdown==3.6
+asyncio==3.4.3
+sendgrid==6.11.0
+huggingface_hub==0.24.5
+python-dotenv==1.0.1
+httpx==0.26.0
