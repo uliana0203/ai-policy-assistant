@@ -1,0 +1,33 @@
+# === Python cache & compiled files ===
+__pycache__/
+*.py[cod]
+*.log
+
+# === Virtual environment ===
+venv/
+.venv/
+env/
+ENV/
+
+# === Environment & secrets ===
+.env
+.env.*
+!*.env.example
+
+# === IDE / Editor ===
+.vscode/
+.idea/
+
+# === Gradio / cache ===
+__outputs__/
+gradio_cache/
+__snapshots__/
+
+# === Docker ===
+*.pid
+*.tar
+docker-compose.override.yml
+
+# === System files ===
+.DS_Store
+Thumbs.db
