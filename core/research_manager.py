@@ -88,21 +88,21 @@ class ResearchManager:
             markdown_text = f"Simulated markdown report for: {query}"
             short_summary = ""
         # ============================================================
-        # 5️⃣ GUARDRAILS
+        # 5️ GUARDRAILS
         # ============================================================
-        yield "🧩 Running guardrails..."
+        yield "Running guardrails..."
         try:
             guards = run_all_guards(markdown_text)
             if not all(guards.values()):
-                yield f"⚠️ Guardrail warning: {guards}"
+                yield f" Guardrail warning: {guards}"
         except Exception as e:
-            yield f"⚠️ Guardrail check failed: {e}"
+            yield f" Guardrail check failed: {e}"
 
 
         # ============================================================
-        # 7️⃣ EMAIL DELIVERY
+        # 7️ EMAIL DELIVERY
         # ============================================================
-        yield "📨 Sending email..."
+        yield " Sending email..."
         try:
             html_template = f"""
             <div style="font-family: Arial, sans-serif; background:#f8f9fa; padding:30px;">
@@ -126,15 +126,15 @@ class ResearchManager:
             )
 
             if result.get("status") == "success":
-                yield f"✅ Email sent successfully to {recipient}"
+                yield f" Email sent successfully to {recipient}"
             else:
-                yield f"⚠️ Email sending failed: {result.get('message', 'Unknown error')}"
+                yield f" Email sending failed: {result.get('message', 'Unknown error')}"
 
         except Exception as e:
-            yield f"❌ Error while sending email: {e}"
+            yield f" Error while sending email: {e}"
 
         # ============================================================
-        # ✅ DONE
+        #  DONE
         # ============================================================
-        yield "✅ Research complete. Report sent successfully!"
+        yield " Research complete. Report sent successfully!"
         yield markdown_text
