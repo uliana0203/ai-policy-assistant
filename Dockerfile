@@ -1,5 +1,5 @@
 # ============================
-# 🧠 Stage 1: Base environment
+# Stage 1: Base environment
 # ============================
 FROM python:3.11-slim
 
