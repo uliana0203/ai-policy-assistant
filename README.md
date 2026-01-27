@@ -1,7 +1,7 @@
 # 🧠 AI Policy Research Assistant  
 **Multi-Agent System for Automated Policy Analysis, Fact-Checking, and Report Generation**
 
-> Intelligent multi-agent assistant that autonomously conducts policy research, verifies data, writes reports, and emails the results to the user. — created by *Uliana Zbezhkhovska, PhD*  
+> Intelligent multi-agent assistant that autonomously conducts policy research, verifies data, writes reports, and emails the results to the user.  
 
 ---
 
@@ -148,6 +148,7 @@ docker compose up --build
 
 **Uliana Zbezhkhovska, PhD**  
 [lyasya3@gmail.com](mailto:lyasya3@gmail.com)  
+
 
 
 
